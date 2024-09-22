@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy</title>
     <style>
+        /* Estilo general */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -32,7 +33,6 @@
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
-        /* Aseguramos que la sección no se superponga con el encabezado */
         section {
             padding: 20px;
             max-width: 900px;
@@ -55,6 +55,26 @@
         }
         a:hover {
             text-decoration: underline;
+        }
+
+        /* Media Queries para hacer que el diseño sea responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem; /* Disminuir el tamaño del texto en pantallas más pequeñas */
+            }
+            section {
+                padding: 15px; /* Reducir el padding en móviles */
+                margin-top: -20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem; /* Tamaño de texto aún más pequeño para móviles pequeños */
+            }
+            section {
+                padding: 10px;
+            }
         }
     </style>
 </head>
